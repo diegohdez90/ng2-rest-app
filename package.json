@@ -15,7 +15,7 @@
   "dependencies": {
     "@angular/common": "^4.0.3",
     "@angular/compiler": "^4.0.3",
-    "@angular/compiler-cli": "^4.0.3",
+    "@angular/compiler-cli": "^4.2.6",
     "@angular/core": "^4.0.3",
     "@angular/forms": "^4.0.3",
     "@angular/http": "^4.0.3",
@@ -30,7 +30,7 @@
     "zone.js": "^0.8.9"
   },
   "devDependencies": {
-    "@angular/cli": "^1.0.1",
+    "@angular/cli": "^1.2.1",
     "@types/jasmine": "^2.5.47",
     "codelyzer": "^3.0.0",
     "concurrently": "^3.4.0",
