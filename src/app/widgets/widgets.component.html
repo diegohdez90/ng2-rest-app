@@ -1,3 +1,38 @@
-<p>
-  widgets works!
-</p>
+<div class="mdl-grid items">
+  <div class="mdl-cell mdl-cell--6-col">
+    <div *ngFor="let widget of widgets" (click)="selectItem(widget)" 
+    		class="item-card mdl-card mdl-shadow--2dp">
+      <img [src]="widget.img" [alt]="widget.name" width="100" height="100">
+      <div>
+        <div class="mdl-card__title">
+          <h2 class="mdl-card__title-text">{{widget.name}}</h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+          {{widget.description}}
+        </div>
+      </div>
+      <div class="mdl-card__menu">
+        <button
+          class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+          <i class="material-icons">close</i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="mdl-cell mdl-cell--6-col">
+    <div class="item-card mdl-card mdl-shadow--2dp">
+      <div *ngIf="!selectedWidget" class="mdl-card__title">
+        <h2 class="mdl-card__title-text">Select a Widget</h2>
+      </div>
+      <div class="mdl-card__supporting-text">
+      <div *ngIf="selectedWidget">  {{ selectedWidget?.name }}</div>
+      </div>
+      <div class="mdl-card__actions">
+        <button type="submit"
+          class="mdl-button mdl-js-button mdl-js-ripple-effect">Cancel</button>
+        <button type="submit"
+          class="mdl-button mdl-js-button mdl-button--colored mdl-js-ripple-effect">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
