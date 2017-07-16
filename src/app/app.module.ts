@@ -7,6 +7,9 @@ import { Ng2RestAppRoutingModule } from './app-routing.module';
 import { ItemsService, WidgetsService } from './shared';
 
 import { AppComponent } from './app.component';
+
+import { ReviewComponent } from './review/review.component';
+
 import { ItemsComponent } from './items/items.component';
 import { ItemsListComponent } from './items/items-list/items-list.component';
 import { ItemDetailComponent } from './items/item-detail/item-detail.component';
@@ -26,7 +29,8 @@ import { FeaturedWidgetComponent } from './widgets/featured-widget/featured-widg
     WidgetsComponent,
     WidgetsListComponent,
     WidgetDetailComponent,
-    FeaturedWidgetComponent
+    FeaturedWidgetComponent,
+    ReviewComponent
   ],
   imports: [
     BrowserModule,
