@@ -13,8 +13,8 @@ import { ItemDetailComponent } from './items/item-detail/item-detail.component';
 import { FeaturedItemComponent } from './items/featured-item/featured-item.component';
 
 import { WidgetsComponent } from './widgets/widgets.component';
-
-
+import { WidgetsListComponent} from './widgets/widgets-list/widgets-list.component';
+import { WidgetDetailComponent } from './widgets/widget-detail/widget-detail.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +22,9 @@ import { WidgetsComponent } from './widgets/widgets.component';
     ItemsListComponent,
     ItemDetailComponent,
     FeaturedItemComponent,
-    WidgetsComponent
+    WidgetsComponent,
+    WidgetsListComponent,
+    WidgetDetailComponent
   ],
   imports: [
     BrowserModule,
